@@ -1,0 +1,44 @@
+<div class="background">
+  <div class="box">
+    <mat-card>
+      <mat-card-title class="center">🚗 Delete Car 🚗</mat-card-title>
+      <form>
+        <mat-form-field>
+          <input matInput placeholder="Brand"
+                 [(ngModel)]="car.brand" name="brand" disabled>
+        </mat-form-field>
+
+        <mat-form-field>
+          <input matInput placeholder="Model"
+                 [(ngModel)]="car.model" name="model" disabled>
+        </mat-form-field>
+
+
+        <mat-form-field>
+          <input matInput placeholder="Year of Fabrication"
+                 [(ngModel)]="car.yearFabrication" name="yearFabrication" disabled>
+        </mat-form-field>
+
+
+        <mat-form-field>
+          <input matInput placeholder="Price"
+                 [(ngModel)]="car.price" name="price" disabled>
+        </mat-form-field>
+
+        <mat-form-field>
+          <input matInput placeholder="Color"
+                 [(ngModel)]="car.color" name="color" disabled>
+        </mat-form-field>
+      </form>
+
+      <button mat-raised-button (click)="deleteCar()" color="primary">
+        Delete Car
+      </button>
+
+      <button mat-raised-button (click)="cancel()">
+        Cancel
+      </button>
+
+    </mat-card>
+  </div>
+</div>

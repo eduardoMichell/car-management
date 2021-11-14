@@ -38,6 +38,8 @@ bower_components
 build/Release
 
 # Dependency directories
+car-management-api/node_modules
+car-management-app/node_modules
 node_modules/
 jspm_packages/
 
